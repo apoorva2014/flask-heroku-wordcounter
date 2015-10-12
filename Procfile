@@ -1,1 +1,1 @@
-$null 
+web: gunicorn app:app
