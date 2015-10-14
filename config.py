@@ -1,8 +1,10 @@
+import os
 class Config(object):
     DEBUG = False
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = 'needs an update'
+    SQLALCHEMY_DB_URI = os.environ['DB_URL']
 
 
 class ProductionConfig(Config):
